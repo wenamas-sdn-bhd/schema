@@ -16,6 +16,9 @@
                     "position": {
                         "type": "object",
                         "properties": {
+                            "page_index": {
+                                "type": "number"
+                            },
                             "x": {
                                 "type": "number"
                             },
@@ -35,13 +38,13 @@
                                 "type": "string"
                             }
                         },
-                        "required": ["x", "y", "width", "height"]
+                        "required": ["page_index", "x", "y", "width", "height"]
                     },
                     "data_source": {
                         "type": "object",
                         "properties": {
                             "entity": {
-                                "type": "string"
+                                "enum": ["USER", "CLIENT", "LOAN"]
                             },
                             "field": {
                                 "type": "string"

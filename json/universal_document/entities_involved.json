@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "name": {
-                        "type": "string"
+                        "enum": ["USER", "CLIENT", "LOAN"]
                     },
                     "alias": {
                         "type": "string"
