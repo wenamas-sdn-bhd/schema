@@ -30,17 +30,6 @@
             },
             "minItems": 1,
             "uniqueItems": true
-        },
-        "overrides": {
-            "type": "array",
-            "uniqueItems": true,
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": "string",
-                    "custom_value": "string"
-                }
-            }
         }
     },
     "required": ["universal_document_id", "entity_bindings"]
