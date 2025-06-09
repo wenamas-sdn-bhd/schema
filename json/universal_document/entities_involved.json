@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/wenamas-sdn-bhd/schema/json/universal_entities_involved.json",
+  "title": "Universal Document Entities Invloved Specification",
+  "description": "This schema specify what is expected for the field 'entities_involved' in 'universal_document' table in system's database. This field tells exactly what entities like 'user', 'client', and more will be used to fill the document.",
+  "type": "object",
+  "properties": {
+        "entities": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "alias": {
+                        "type": "string"
+                    },
+                    "compulsory": {
+                        "type": "boolean"
+                    },
+                    "note": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "required": ["name", "alias", "compulsory"]
+                }
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    },
+    "required": ["entities"]
+}
