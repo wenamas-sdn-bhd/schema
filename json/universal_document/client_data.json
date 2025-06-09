@@ -31,14 +31,6 @@
             "minItems": 1,
             "uniqueItems": true
         },
-        "generation_options": {
-            "type": "object",
-            "properties": {
-                "filename": {
-                    "type": "string"
-                }
-            }
-        },
         "overrides": {
             "type": "array",
             "uniqueItems": true,
