@@ -44,12 +44,15 @@
                         "type": "object",
                         "properties": {
                             "entity": {
-                                "enum": ["USER", "CLIENT", "LOAN"]
+                                "enum": ["USER", "CLIENT", "LOAN", null]
                             },
                             "field": {
                                 "type": "string"
                             },
-                            "fallback": {
+                            "fallback_field": {
+                                "type": "string"
+                            },
+                            "default": {
                                 "type": "string"
                             },
                             "note": {
