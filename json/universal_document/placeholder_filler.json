@@ -33,9 +33,9 @@
                             },
                             "description": {
                                 "type": "string"
-                            },
-                            "required": ["x", "y", "width", "height"]
-                        }
+                            }
+                        },
+                        "required": ["x", "y", "width", "height"]
                     },
                     "data_source": {
                         "type": "object",
@@ -54,9 +54,9 @@
                             },
                             "description": {
                                 "type": "string"
-                            },
-                            "required": ["entity", "field"]
-                        }
+                            }
+                        },
+                        "required": ["entity", "field"]
                     },
                     "formatting": {
                         "type": "object",
@@ -72,12 +72,12 @@
                             },
                             "description": {
                                 "type": "string"
-                            },
-                            "required": ["type", "font_size"]
-                        }
-                    },
-                    "required": ["position", "data_source", "formatting"]
-                }
+                            }
+                        },
+                        "required": ["type", "font_size"]
+                    }
+                },
+                "required": ["position", "data_source", "formatting"]
             },
             "minItems": 1,
             "uniqueItems": true

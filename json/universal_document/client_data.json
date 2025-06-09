@@ -1,0 +1,55 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/wenamas-sdn-bhd/schema/json/universal_document/client_data.json",
+    "title": "Universal Document Client Data Specification",
+    "description": "This schema specify what is expected from the client when requesting to generate a universal document",
+    "type": "object",
+    "properties": {
+        "universal_document_id": {
+            "type": "number"
+        },
+        "entity_bindings": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "number"
+                    },
+                    "note": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    }
+                },
+                "required": ["name", "id"]
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "generation_options": {
+            "type": "object",
+            "properties": {
+                "filename": {
+                    "type": "string"
+                }
+            }
+        },
+        "overrides": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": "string",
+                    "custom_value": "string"
+                }
+            }
+        }
+    },
+    "required": ["universal_document_id", "entity_bindings"]
+}
