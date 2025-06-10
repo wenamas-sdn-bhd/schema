@@ -55,6 +55,12 @@
                             "default": {
                                 "type": "string"
                             },
+                            "prefix": {
+                                "type": "string"
+                            },
+                            "wrap-with": {
+                                "type": "string"
+                            },
                             "note": {
                                 "type": "string"
                             },
