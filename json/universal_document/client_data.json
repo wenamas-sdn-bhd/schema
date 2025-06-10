@@ -14,7 +14,7 @@
                 "type": "object",
                 "properties": {
                     "name": {
-                        "enum": ["USER", "CLIENT", "LOAN"]
+                        "enum": ["USER", "CLIENT", "LOAN", "LOAN_REPAYMENT"]
                     },
                     "id": {
                         "type": "number"

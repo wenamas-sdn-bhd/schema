@@ -19,10 +19,16 @@
                             "page_index": {
                                 "type": "number"
                             },
-                            "x": {
+                            "x0": {
                                 "type": "number"
                             },
-                            "y": {
+                            "y0": {
+                                "type": "number"
+                            },
+                            "x1": {
+                                "type": "number"
+                            },
+                            "y1": {
                                 "type": "number"
                             },
                             "width": {
@@ -38,13 +44,13 @@
                                 "type": "string"
                             }
                         },
-                        "required": ["page_index", "x", "y", "width", "height"]
+                        "required": ["page_index", "x0", "y0", "x1", "y1", "width", "height"]
                     },
                     "data_source": {
                         "type": "object",
                         "properties": {
                             "entity": {
-                                "enum": ["USER", "CLIENT", "LOAN", null]
+                                "enum": ["USER", "CLIENT", "LOAN", "LOAN_REPAYMENT", null]
                             },
                             "field": {
                                 "type": "string"
@@ -79,6 +85,9 @@
                             "font_size": {
                                 "type": "number"
                             },
+                            "text-center": {
+                                "type": "boolean"
+                            },
                             "note": {
                                 "type": "string"
                             },
@@ -86,7 +95,7 @@
                                 "type": "string"
                             }
                         },
-                        "required": ["type", "font_size"]
+                        "required": ["type", "font_size", "text-center"]
                     }
                 },
                 "required": ["position", "data_source", "formatting"]
