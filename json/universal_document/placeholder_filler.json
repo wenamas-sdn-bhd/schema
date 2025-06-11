@@ -91,7 +91,7 @@
                             "text-center": {
                                 "type": "boolean"
                             },
-                            "capitalize": {
+                            "uppercase": {
                                 "type": "boolean"
                             },
                             "is_money": {
