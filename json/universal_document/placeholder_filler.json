@@ -64,6 +64,9 @@
                             "prefix": {
                                 "type": "string"
                             },
+                            "suffix": {
+                                "type": "string"
+                            },
                             "wrap-with": {
                                 "type": "string"
                             },
@@ -87,6 +90,18 @@
                             },
                             "text-center": {
                                 "type": "boolean"
+                            },
+                            "capitalize": {
+                                "type": "boolean"
+                            },
+                            "is_money": {
+                                "type": "boolean"
+                            },
+                            "trslt_num_to_words": {
+                                "type": "boolean"
+                            },
+                            "trslt_iso_639": {
+                                "type": "string"
                             },
                             "note": {
                                 "type": "string"
