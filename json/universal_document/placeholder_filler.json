@@ -31,12 +31,6 @@
                             "y1": {
                                 "type": "number"
                             },
-                            "width": {
-                                "type": "number"
-                            },
-                            "height": {
-                                "type": "number"
-                            },
                             "note": {
                                 "type": "string"
                             },
@@ -44,7 +38,7 @@
                                 "type": "string"
                             }
                         },
-                        "required": ["page_index", "x0", "y0", "x1", "y1", "width", "height"]
+                        "required": ["page_index", "x0", "y0", "x1", "y1"] 
                     },
                     "data_source": {
                         "type": "object",
