@@ -82,8 +82,8 @@
                             "font_size": {
                                 "type": "number"
                             },
-                            "text-center": {
-                                "type": "boolean"
+                            "text-align": {
+                                "enum": ["center", "left", "right"]
                             },
                             "uppercase": {
                                 "type": "boolean"
