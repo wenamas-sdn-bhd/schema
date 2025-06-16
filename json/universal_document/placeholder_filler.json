@@ -104,7 +104,7 @@
                                 "type": "string"
                             }
                         },
-                        "required": ["type", "font_size", "text-align", "uppercase"]
+                        "required": ["type", "font_size", "css", "uppercase"]
                     }
                 },
                 "required": ["position", "data_source", "formatting"]
