@@ -43,6 +43,9 @@
                     "data_source": {
                         "type": "object",
                         "properties": {
+                            "value": {
+                                "type": "string"
+                            },
                             "entity": {
                                 "enum": ["USER", "CLIENT", "LOAN", "LOAN_REPAYMENT", null]
                             },
@@ -56,6 +59,15 @@
                                 "type": "string"
                             },
                             "prefix": {
+                                "type": "string"
+                            },
+                            "is_money": {
+                                "type": "boolean"
+                            },
+                            "trslt_num_to_words": {
+                                "type": "boolean"
+                            },
+                            "trslt_iso_639": {
                                 "type": "string"
                             },
                             "suffix": {
@@ -87,15 +99,6 @@
                             },
                             "uppercase": {
                                 "type": "boolean"
-                            },
-                            "is_money": {
-                                "type": "boolean"
-                            },
-                            "trslt_num_to_words": {
-                                "type": "boolean"
-                            },
-                            "trslt_iso_639": {
-                                "type": "string"
                             },
                             "note": {
                                 "type": "string"
